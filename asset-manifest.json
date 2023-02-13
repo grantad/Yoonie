@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Yoonie/static/css/main.345ec4e7.css",
+    "main.js": "/Yoonie/static/js/main.bd514aee.js",
+    "static/js/787.5f93357e.chunk.js": "/Yoonie/static/js/787.5f93357e.chunk.js",
+    "static/media/iStock-woman-eating.jpeg": "/Yoonie/static/media/iStock-woman-eating.12bf45ba602e369cdb0c.jpeg",
+    "static/media/iStock-lil-girl.jpeg": "/Yoonie/static/media/iStock-lil-girl.9d351883d8888122dbbd.jpeg",
+    "static/media/iStock-black-woman-daughter.jpeg": "/Yoonie/static/media/iStock-black-woman-daughter.f808ff8c7112569b08b6.jpeg",
+    "static/media/Feeding _ clothing homeless -1.png": "/Yoonie/static/media/Feeding _ clothing homeless -1.fd075f8a500677320caa.png",
+    "static/media/Feeding _ clothing homeless -2.png": "/Yoonie/static/media/Feeding _ clothing homeless -2.01c70015e2767dff91ef.png",
+    "static/media/Coaching.png": "/Yoonie/static/media/Coaching.076a1f4d16a9464d842b.png",
+    "static/media/peachtree.jpg": "/Yoonie/static/media/peachtree.dc3a9c6b3cefded9b08e.jpg",
+    "static/media/Get-involved-3.png.jpg": "/Yoonie/static/media/Get-involved-3.png.1d41275287b7b7e248e7.jpg",
+    "index.html": "/Yoonie/index.html",
+    "main.345ec4e7.css.map": "/Yoonie/static/css/main.345ec4e7.css.map",
+    "main.bd514aee.js.map": "/Yoonie/static/js/main.bd514aee.js.map",
+    "787.5f93357e.chunk.js.map": "/Yoonie/static/js/787.5f93357e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.345ec4e7.css",
+    "static/js/main.bd514aee.js"
+  ]
+}
