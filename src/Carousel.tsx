@@ -33,7 +33,7 @@ const Example = (props: CarouselProps) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
+        <img className="d-block w-100" src={item.src} alt={item.altText} />
         <div className="carousel-caption">
           <h3>{item.caption}</h3>
         </div>
