@@ -1,9 +1,11 @@
 import React from 'react';
+import ReactDom from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import Navbar from './AppNavbar';
 import Carousel from './Carousel';
 import { Button, Nav } from 'reactstrap';
 //import { Navbar } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes, BrowserRouter } from 'react-router-dom';
 import Home from './Home';
 import Mission from './Mission';
 import Coaching from './Coaching';
@@ -13,7 +15,7 @@ import Success from './Success';
 import Vision from './Vision';
 import Multi from './multiple';
 
-import { Routes } from 'react-router-dom';
+
 import  Grid  from './AppGrid';
 import AppGrid from './AppGrid';
 import ServiceWork from './feeding';
@@ -35,6 +37,7 @@ import peach from './images/peachtree.jpg';
 import getInv2 from './images/Get-involved-2.png.jpg'
 import getInv3 from './images/Get-involved-3.png.jpg'
 import meditate from './images/Coaching.png'
+import ReactDOM from 'react-dom';
 
 
 
@@ -59,7 +62,7 @@ const items = [
   },
 ];
 
-function App() {
+export default function App() {
   let component
   switch (window.location.pathname) {
     case "/":
@@ -95,10 +98,11 @@ function App() {
   }
 
   return (
+    <BrowserRouter>
     <>
       <Navbar />
     <Routes>
-      <Route path="/" element={<Carousel />} />
+      <Route path="/" element={<Carousel items={items}/> } />
       <Route path="/about" element={<About />} />
       <Route path="/getInvolved" element={<GetInvolved />} />
       <Route path="/goals" element={<Goals />} />
@@ -107,7 +111,7 @@ function App() {
 
 </Routes>
       
-      {component}
+      
       <div>
       <Card className='text-center bg-secondary text-white my-5 py-4'>
   <Card.Body>This call to action card is a great place to showcase some
@@ -184,7 +188,9 @@ function App() {
     
       
       </>
-  )
+      </BrowserRouter>
+  );
 }
 
-export default App
+const root = createRoot(document.getElementById('root')!);
+root.render(<App />);
